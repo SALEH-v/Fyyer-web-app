@@ -1,19 +1,14 @@
 # # THIS IS A SEED SCRIPT TO INSERT ALL RQUIRED DATA IN DATABASE
 
 
+# # from models import *
+# # from app import *
 
-
-
-
-
-
-
-
-# from app import Show, Venue, Artist
-
+# # db = SQLAlchemy(app)
 
 # def create_venus():
 #     venues = [{
+#         "id" : 1,
 #         "name": "The Musical Hop",
 #         "genres": ["Jazz", "Reggae", "Swing", "Classical", "Folk"],
 #         "address": "1015 Folsom Street",
@@ -26,6 +21,7 @@
 #         "seeking_description": "We are on the lookout for a local artist to play every two weeks. Please call us.",
 #         "image_link": "https://images.unsplash.com/photo-1543900694-133f37abaaa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
 #     }, {
+#         "id" :2,
 #         "name": "The Dueling Pianos Bar",
 #         "genres": ["Classical", "R&B", "Hip-Hop"],
 #         "address": "335 Delancey Street",
@@ -37,6 +33,7 @@
 #         "seeking_talent": False,
 #         "image_link": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
 #     }, {
+#         "id" :3,
 #         "name": "Park Square Live Music & Coffee",
 #         "genres": ["Rock n Roll", "Jazz", "Classical", "Folk"],
 #         "address": "34 Whiskey Moore Ave",
@@ -59,6 +56,7 @@
 
 # def create_artists():
 #     artists = [{
+#         "id" :4,
 #         "name": "Guns N Petals",
 #         "genres": ["Rock n Roll"],
 #         "city": "San Francisco",
@@ -70,6 +68,7 @@
 #         "seeking_description": "Looking for shows to perform at in the San Francisco Bay Area!",
 #         "image_link": "https://images.unsplash.com/photo-1549213783-8284d0336c4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80",
 #     }, {
+#         "id":5,
 #         "name": "Matt Quevedo",
 #         "genres": ["Jazz"],
 #         "city": "New York",
@@ -79,6 +78,7 @@
 #         "seeking_venue": False,
 #         "image_link": "https://images.unsplash.com/photo-1495223153807-b916f75de8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
 #     }, {
+#         "id" :6,
 #         "name": "The Wild Sax Band",
 #         "genres": ["Jazz", "Classical"],
 #         "city": "San Francisco",

@@ -1,11 +1,11 @@
 from flask_sqlalchemy import SQLAlchemy
 
-
-
 db = SQLAlchemy()
 
 
-# the association table
+
+
+
 class Show(db.Model):
     __tablename__ = 'Show'
 
@@ -41,7 +41,9 @@ class Venue(db.Model):
     image_link = db.Column(db.String(500))
     facebook_link = db.Column(db.String(120))
 
-    shows = db.relationship("Artist", secondary="Show", backref=db.backref('Venue', lazy=True))
+    shows = db.relationship('Show', backref='Venue', lazy=True)
+
+    # shows = db.relationship("Show", backref=db.backref('Venue', lazy=True), overlaps="venue")
 
     # Artists = db.relationship('Artist', secondary=Show, backref=db.backref('Venue', lazy=True))
 
@@ -63,7 +65,7 @@ class Artist(db.Model):
     seeking_description = db.Column(db.String(120))
     facebook_link = db.Column(db.String(120))
     website = db.Column(db.String(500))
-    shows = db.relationship("Venue", secondary="Show", backref=db.backref('Artist', lazy=True))
+    shows = db.relationship("Show", backref=db.backref('Artist', lazy=True))
 
 
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
